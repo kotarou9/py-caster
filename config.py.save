@@ -1,0 +1,28 @@
+import time
+
+RADIO_FRAME_BUFFER=4096
+RADIO_TYPE="mp3"
+RADIO_HOST="ani-radio.ga"
+RADIO_PORT=7654
+RADIO_DIRECTORY="/etc/music/output/*."
+RADIO_PLAYLIST="playlist.lst"
+RADIO_USE="d"
+RADIO_LISTENERS=32
+RADIO_RATE=20000
+RADIO_WAIT=1
+RADIO_FPS=60
+DEBUG=True # prints messages
+# see termcolor doc
+DEBUG_ERROR_COLOR="red"
+DEBUG_ERROR_ATTR=['bold']
+DEBUG_INFO_COLOR="cyan"
+DEBUG_INFO_ATTR=['bold']
+DEBUG_SONG_CHANGE_COLOR="yellow"
+DEBUG_SONG_CHANGE_ATTR=['bold']
+DEBUG_TIME_COLOR="magenta"
+DEBUG_TIME_ATTR=["underline"]
+DEBUG_LOGFILE="radio.log"
+# add color to logfile note: text editers like nano/vi wont display terminal colors
+DEBUG_LOGFILE_COLOR=False
+RADIO_HEADERS="HTTP/1.1 200 OK\nDate: %s\nServer: py-caster://v.0.1/22-APR-2016\nUnix-Timestamp: %s\nContent-Type: audio/mpeg\r\n" % (time.strftime('%l:%M%p %Z on %b %d, %Y'), time.time()) 
+
