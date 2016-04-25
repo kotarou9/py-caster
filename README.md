@@ -14,3 +14,9 @@ stream music live (mp3)
 - add webserver support
 - add burst on connect
 - clean up code
+
+# needs
+- termcolor
+
+# status
+40% complete
